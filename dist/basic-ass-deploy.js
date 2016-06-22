@@ -54,7 +54,7 @@ exports.default = function (config) {
     var ssh = new _sshPromise2.default({
       host: config.host,
       username: config.username,
-      privateKey: _fs2.default.readFileSync(process.env.HOME + '/foodbeast.pem')
+      privateKey: _fs2.default.readFileSync(config.privateKey.replace('~', process.env.HOME))
     });
 
     resolve({
