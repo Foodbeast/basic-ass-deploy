@@ -19,6 +19,8 @@
   "author": "Rudy Chaney <rudy@foodbeast.com> (http://rudy.codes)",
   "license": "ISC",
   "dependencies": {
+    "app-root-path": "^1.2.1",
+    "argv": "0.0.2",
     "chalk": "^1.1.3",
     "cli": "^0.11.2",
     "confirm-simple": "^1.0.3",

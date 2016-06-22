@@ -35,4 +35,6 @@ Create a bad.json file to store your config in the root of your project/applicat
 ```
 
 ## Usage
-Start a deployment anywhere in your project by running `$ bad`.
+Run `$ bad`.
+
+This will search for a `bad.json` config file in your project root. You can declare another config file by running `$ bad -c /path/t0/other/config.json`.
