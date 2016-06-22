@@ -28,6 +28,14 @@
     "type": "git",
     "url": "git+https://github.com/foodbeast/basic-ass-deploy.git"
   },
+  "keywords": [
+    "node",
+    "deploy",
+    "remote",
+    "ssh",
+    "cli",
+    "pm2"
+  ],
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-polyfill": "^6.9.1",
