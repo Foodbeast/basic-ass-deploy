@@ -1,0 +1,40 @@
+{
+  "name": "basic-ass-deployment",
+  "version": "0.0.1",
+  "description": "Deploy node apps with node and ease, basically.",
+  "main": "boot.js",
+  "scripts": {
+    "test": "mocha test/cli.js",
+    "compile": "browserify --bare lib/index.js -o dist/basic-ass-deploy.js -t [ babelify --presets [ es2015 babel-polyfill ] ]",
+    "bang": "echo \"#! /usr/bin/env node \n\n\" >> ./dist/temp && cat ./dist/basic-ass-deploy.js >> ./dist/temp && rm ./dist/basic-ass-deploy.js && mv ./dist/temp ./dist/basic-ass-deploy.js",
+    "build": "npm run compile && npm run bang",
+    "preversion": "npm run build && npm test",
+    "version": "git add .",
+    "postversion": "git push && git push --tags"
+  },
+  "bin": {
+    "bad": "./dist/basic-ass-deploy.js",
+    "bad-dev": "boot.js"
+  },
+  "author": "Rudy Chaney <rudy@foodbeast.com> (http://rudy.codes)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli": "^0.11.2",
+    "confirm-simple": "^1.0.3",
+    "ssh-promise": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foodbeast/basic-ass-deploy.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
