@@ -7,7 +7,7 @@ This project currently only supports basic PM2. It also has not been battle test
 ## Installation
 
 ```sh
-$ npm install basic-ass-deploy --save
+$ npm install basic-ass-deploy --save-dev
 ```
 
 ## Configuration
