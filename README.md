@@ -2,7 +2,7 @@
 Deploy node apps with node, basically. Run `$ bad` to deploy. **This is a serious WIP and is not currently unit or battle tested.**
 
 ## READ FIRST
-This project currently 
+This project currently only supports basic PM2. It also has not been battle tested so use in dev only. TODO: Forever support, more advanced process management support.
 
 ## Installation
 
