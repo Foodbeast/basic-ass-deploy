@@ -7,7 +7,6 @@ describe('test', function() {
 
   it('Start', function() {
     return true;
-    });
   });
 
 });
