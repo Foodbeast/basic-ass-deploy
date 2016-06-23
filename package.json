@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test/cli.js",
     "compile": "browserify --bare lib/index.js -o dist/basic-ass-deploy.js -t [ babelify --presets [ es2015 babel-polyfill ] ]",
-    "bang": "echo \"#! /usr/bin/env node \n\n\" >> ./dist/temp && cat ./dist/basic-ass-deploy.js >> ./dist/temp && rm ./dist/basic-ass-deploy.js && mv ./dist/temp ./dist/basic-ass-deploy.js",
+    "bang": "echo \"#!/usr/bin/env node \n\n\" >> ./dist/temp && cat ./dist/basic-ass-deploy.js >> ./dist/temp && rm ./dist/basic-ass-deploy.js && mv ./dist/temp ./dist/basic-ass-deploy.js",
     "build": "npm run compile && npm run bang",
     "preversion": "npm run build && npm test",
     "version": "git add .",

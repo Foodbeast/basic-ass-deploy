@@ -1,3 +1,3 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 require("babel-register");
 require("./lib/index");
