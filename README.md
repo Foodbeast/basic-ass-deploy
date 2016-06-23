@@ -10,6 +10,12 @@ This project currently only supports basic PM2. It also has not been battle test
 $ npm install basic-ass-deploy --save-dev
 ```
 
+or globally
+
+```sh
+$ npm install basic-ass-deploy -g
+```
+
 ## Configuration
 Make sure your repo and server have [deploy keys](https://developer.github.com/guides/managing-deploy-keys/) set up.
 
@@ -35,6 +41,6 @@ Create a bad.json file to store your config in the root of your project/applicat
 ```
 
 ## Usage
-Run `$ bad`.
+From your main project folder run `$ bad`.
 
-This will search for a `bad.json` config file in your project root. You can declare another config file by running `$ bad -c /path/t0/other/config.json`.
+This will search for a `bad.json` config file in your projector you can declare another config file by running `$ bad -c /path/t0/other/config.json`.
