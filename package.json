@@ -1,6 +1,6 @@
 {
   "name": "basic-ass-deploy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deploy node apps with node and ease, basically.",
   "main": "boot.js",
   "scripts": {
